@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RMPro.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RMPro.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\css\\jquery.inputpicker.css",
+      "PackagePath": "staticwebassets\\css\\jquery.inputpicker.css"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\images\\bg.jpg"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\images\\rm_logo.png",
+      "PackagePath": "staticwebassets\\images\\rm_logo.png"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\charts.js",
+      "PackagePath": "staticwebassets\\js\\charts.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\common.js",
+      "PackagePath": "staticwebassets\\js\\common.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\enquiry.js",
+      "PackagePath": "staticwebassets\\js\\enquiry.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\jquery.inputpicker.js",
+      "PackagePath": "staticwebassets\\js\\jquery.inputpicker.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\masterImport.js",
+      "PackagePath": "staticwebassets\\js\\masterImport.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\masters.js",
+      "PackagePath": "staticwebassets\\js\\masters.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\priceentry.js",
+      "PackagePath": "staticwebassets\\js\\priceentry.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\reports.js",
+      "PackagePath": "staticwebassets\\js\\reports.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\shouldcost.js",
+      "PackagePath": "staticwebassets\\js\\shouldcost.js"
+    },
+    {
+      "Id": "E:\\Project1202\\RMPro\\RMPro\\wwwroot\\js\\template.js",
+      "PackagePath": "staticwebassets\\js\\template.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RMPro.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RMPro.props",
+      "PackagePath": "build\\RMPro.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RMPro.props",
+      "PackagePath": "buildMultiTargeting\\RMPro.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RMPro.props",
+      "PackagePath": "buildTransitive\\RMPro.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

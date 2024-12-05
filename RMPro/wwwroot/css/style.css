@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight:200;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    transition: width 0.3s;
+}
+
+.body-main {
+    position: relative;
+    margin-left: 180px;
+    width: calc(100% - 195px);
+    transition: 0.3s;
+    font-size:13px;
+}
+
+aside.close + .body-main {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    transition: 0.3s;
+}
+
+aside {
+    background-image: url('../images/bg.jpg');
+    width: 180px;
+    height: 100vh;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+    position: fixed;
+  
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .head .logo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .head .bx-menu {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+
+.nav {
+    position: sticky;
+    border-top: solid #F2F2F2;
+    margin-top: 10px;
+    padding-top: 10px;
+    flex: 1;
+}
+
+aside:not(aside.close) .nav {
+    overflow-y: auto;
+}
+
+.nav::-webkit-scrollbar {
+    width: 0;
+}
+
+.menu {
+    padding: 8px 1px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    transition: 0.3s;
+    justify-content: space-between;
+}
+
+    .menu:hover {
+        background: #F2F2F2;
+        color: black;
+    }
+
+    .menu i {
+        font-size: 20px;
+    }
+
+    .menu span {
+        font-weight: 400;
+        font-size: 14px;
+        flex: 1;
+    }
+
+.foot {
+    padding-top: 20px;
+    border-top: solid #F2F2F2;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+    .profile img {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+    }
+
+    .profile .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .profile .info .name {
+            font-weight: 400;
+            white-space: nowrap;
+        }
+
+        .profile .info .job {
+            font-size: 12px;
+        }
+
+.foot .menu-logout {
+    color: red;
+    background: #F2F2F2;
+    margin-top: 15px;
+}
+
+    .foot .menu-logout:hover {
+        background: #FFE3E3;
+        color: red;
+    }
+
+aside.close {
+    width: 70px;
+}
+
+    aside.close body {
+        width: 100px;
+    }
+
+
+    aside.close .logo {
+        display: none;
+    }
+
+    aside.close .bx-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    aside.close .menu span {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.25);
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        margin-left: 50px;
+        font-size: 16px;
+        opacity: 0 !important;
+        pointer-events: none;
+    }
+
+    aside.close .menu i:nth-child(1) {
+        width: 100%;
+        text-align: center;
+    }
+
+    aside.close .menu i:nth-child(3) {
+        display: none;
+    }
+
+.nav .menu.active {
+    background: #F2F2F2;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu i:nth-child(3) {
+    transition: 0.3s;
+}
+
+.menu.active i:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+aside.close .menu-dropdown {
+    position: relative;
+}
+
+    aside.close .menu-dropdown .sub-menu {
+        display: none;
+        padding-left: 5px;
+    }
+
+.menu-dropdown .sub-menu {
+    display: none;
+    padding-left: 15px;
+}
+
+.sub-menu .menu {
+    font-size: 14px;
+}
+
+aside.close .profile {
+    display: flex;
+    justify-content: center;
+}
+
+    aside.close .profile .info {
+        display: none;
+    }
+
+
+.step {
+    display: none;
+}
+
+    /* Show active step */
+    .step.active {
+        display: block;
+    }
+
+
+/* MAIN */
+.headtitle {
+    position: sticky;
+    width: 100%;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.btn-margin {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+
+
+
+h3 {
+    color: rgb(18, 17, 17);
+}
+
+.con-main {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.card {
+    padding: 8px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardchart {
+    padding: 8px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icon-box i {
+    font-size: 45px;
+    color: #ebedeb;
+    margin-left: 10px;
+}
+
+.custom-hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 1px solid #ebedeb;
+}
+
+
+h3 {
+    padding: 8px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+    h3::before {
+        content: "";
+        position: absolute;
+        left: 1%;
+        top: 35px;
+        bottom: 16px;
+        width: 70px;
+        height: 4px;
+        background: rgba(238,111,87,0.5);
+        z-index: -1;
+    }
+
+#exampleModal .modal-dialog {
+    max-width: 25%; /* Adjust the percentage value as needed */
+}
+
+
+.nav-link:hover {
+    text-decoration: none;
+}
+
+.has-error .form-control {
+    border-color: #a94442; /* Customize error border color */
+}
+
+/* Hide the span initially */
+.iexp {
+    margin-left: 5px;
+    display: none;
+    transition: display 0.5s ease;
+}
+
+#save:hover .iexp,
+#view:hover .iexp,
+#clear:hover .iexp {
+    display: inline;
+}
+
+.drop-zone {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.drop-zone__prompt {
+    font-size: 18px;
+}
+
+.drop-zone__input {
+    margin-top: 10px;
+    display: none;
+}
+
+/* loader */
+/* HTML: <div class="loader"></div> */
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid lightblue;
+    border-right-color: orange;
+    animation: l2 1s infinite linear;
+    z-index: 1000;
+}
+
+@keyframes l2 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+
+/* Define SVG data URIs for the previous and next icons */
+.prev-icon {
+    display: inline-block;
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath d="M9 17l-5-5 5-5m-4.586 5L15 12l-5.586-5L10 7.414 12.586 10 10 12.586 9 11.586" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3C/path%3E%3C/svg%3E');
+    background-size: cover;
+}
+
+.next-icon {
+    display: inline-block;
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath d="M15 17l5-5-5-5m4.586 5L9 12l5.586-5L14 7.414 11.414 10l2.586 2.586L15 11.586" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3C/path%3E%3C/svg%3E');
+    background-size: cover;
+}
+
+table.dataTable thead th {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: #ebedeb;
+}
+
+table.dataTable td {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+}
+
+td {
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper {
+    margin: 0 auto;
+}
+
+.subtotal-row td {
+    background-color: #ebedeb !important;
+}
+
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: left;
+    background-color: #ebedeb;
+    margin-left: 2px;
+    font-size: 12px;
+}

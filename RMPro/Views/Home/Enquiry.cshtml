@@ -1,0 +1,67 @@
+﻿
+<div class="con-main">
+    <input type="hidden" class="form-control" value="enquiry" id="pgid">
+    <input type="hidden" class="form-control" value="Enquiry" id="pggrpid">
+    <input type="hidden" class="form-control" value="" id="vendorcode">
+    <form id="enqForm">
+        <div class="step active" id="step1">
+          
+            <div class="row">
+                <div class="form-row" id="EnqEntry">
+                    <div class="form-group col-md-3">
+                        <label for="vendorCode">Vendor Code</label>
+                        <input type="text" class="form-control" id="vendorCode" placeholder="Vendor Code" required>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="fromDate">From Date</label>
+                        <input type="date" class="form-control" id="fromDate" placeholder="From Date" required min="2018-01-01">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="toDate">To Date</label>
+                        <input type="date" class="form-control" id="toDate" placeholder="To Date" required min="2018-01-01">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="efDate">Effective Date</label>
+                        <input type="date" class="form-control" id="efDate" placeholder="Effective Date" required min="2018-01-01">
+                    </div>
+                    <div class="form-group col-md-3 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary next" style="margin-top: 22px;">
+                            <i class="fa fa-plus-circle"></i>
+                            Create Enquiry
+                        </button>
+                    </div>
+                </div>
+               
+            </div>
+           
+            <h3>Recent Enquiries</h3>
+            <div class="table table-responsive">
+                <div id="enqTableContainer"></div>
+            </div>
+        </div>
+
+        <div class="step" id="step2">
+            <div class="table-responsive">
+                <div id="POTableContainer">
+             </div>
+            </div>
+            <button class="btn btn-secondary prev" style="margin-top: 5px;">Previous</button>
+            <button class="btn btn-primary next" style="float: right; margin-top: 5px;">Next</button>
+        </div>
+
+        <div class="step" id="step3">
+            <div class="table-responsive">
+                <div id="SelectedPOContainer">
+            </div>   
+            </div>
+            <button class="btn btn-secondary prev" style="margin-top: 5px;">Previous</button>
+            <button type="submit" class="btn btn-success" style="float: right; margin-top: 5px;">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+<!-- Modal -->
+
+
+<script src="~/js/enquiry.js"></script>

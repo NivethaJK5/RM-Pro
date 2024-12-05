@@ -1,0 +1,36 @@
+﻿
+    <div class="con-main">
+        <input type="hidden" class="form-control" value="MasterImport" id="pgid">
+        <input type="hidden" class="form-control" value="MasterImports" id="pggrpid">
+    
+        <form id="myForm">
+            <div class="row">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Value_Type">Master Type</label>
+                        <select class="form-control" id="Master_Type" required>
+                            <option value="" disabled selected hidden>Select</option>
+                        <option value="GeneralMaster">General Master</option>
+                            <option value="ProductMaster">Product Master</option>
+                            <option value="ProductCompositionMaster">Product Composition Master</option>
+                            <option value="ProductWeightMaster">Product Weight Master</option>
+                            <option value="VendorMaster">Vendor Master</option>
+                            <option value="CustomerMaster">Customer Master</option>
+                            <option value="CommodityExchangeCombination">Commodity Exchange Combination</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div class="drop-zone" id="dropZone">
+                            <span class="drop-zone__prompt">Drag & Drop files here or click to upload</span>
+                            <input type="file" class="drop-zone__input" id="file-input" multiple>
+                        </div>
+                        <div id="fileList"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- Horizontal line -->
+        <hr class="custom-hr">
+        <h3>Recently Uploaded</h3>
+        
+    </div>

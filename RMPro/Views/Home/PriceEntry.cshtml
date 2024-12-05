@@ -1,0 +1,78 @@
+﻿
+
+<div class="con-main"> 
+    <input type="hidden" class="form-control" value="PriceEntry" id="pgid">
+     <form id="myForm">
+        <div class="row">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <h4><span id="enqNumber"></span> </h4>
+                </div>
+               
+                <div class="form-group col-md-3">
+                    <select class="form-control"  id="version">
+                        <option value="" disabled selected hidden>Select Version</option>
+                        <option value="0">New Version</option>
+                        </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <select class="form-control" id="approval_status">
+                        <option value="" disabled selected hidden>Approval Type</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <h5><span id="dates" style="background-color:#f8f8f8; padding:8px; border-radius:10px; "></span> </h5>
+                </div>
+            </div>
+
+             </div>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="priceTab" data-toggle="tab" href="#priceTableContainer">Price Table</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="diffTab" data-toggle="tab" href="#diffTableContainer" onclick=diffcalc()>Differences</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="fgTab" data-toggle="tab" href="#impactTableContainer" onclick=fgImpact()>FG Impact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="retraTab" data-toggle="tab" href="#retroimpactTableContainer" onclick=retroImpact()>Retrospective Impact</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade active" id="priceTableContainer" role="tabpanel" aria-labelledby="priceTab">
+                
+            </div>
+
+            <div class="tab-pane fade" id="diffTableContainer" role="tabpanel" aria-labelledby="difference">
+                
+            </div>
+
+            <div class="tab-pane fade" id="impactTableContainer" role="tabpanel" aria-labelledby="fgTab">
+               
+            </div>
+
+            <div class="tab-pane fade" id="retroimpactTableContainer" role="tabpanel" aria-labelledby="retroTab">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="Remarks">Remarks</label>
+                <textarea id="Remarks" class="form-control" placeholder="Remarks" required></textarea>
+            </div>
+        </div>
+       
+    </form>
+</div>
+
+<script src="~/js/priceentry.js"></script>
+
+

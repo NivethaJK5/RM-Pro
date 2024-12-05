@@ -1,0 +1,47 @@
+﻿
+<div class="con-main">
+
+    <input type="hidden" class="form-control" value="PurchaseDetailsReport" id="pgid">
+    <form id="myForm">
+
+        <div class="row">
+            <div class="form-row">
+                
+                <div class="form-group col-md-3">
+                    <label for="EnqNumber">Vendor Code</label>
+                    <input type="text" class="form-control" id="VendorCode" placeholder="Vendor Code" required>
+                   
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="Select_Type">Invoice/PO</label>
+                    <select class="form-control" id="Select_Type" required>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="Invoice">Invoice</option>
+                        <option value="PO">PO</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="fromDate">From Date</label>
+                    <input type="date" class="form-control" id="fromDate" placeholder="From Date" required min="2018-01-01">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="toDate">To Date</label>
+                    <input type="date" class="form-control" id="toDate" placeholder="To Date" required min="2018-01-01">
+                </div>
+              
+            </div>
+        </div>
+
+    </form>
+    <!-- Horizontal line -->
+    <hr class="custom-hr">
+    <div id="PDReportContainer">
+    </div>
+</div>
+<script src="~/js/reports.js"></script>
+
+
+
+

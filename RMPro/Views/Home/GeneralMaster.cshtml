@@ -1,0 +1,49 @@
+﻿
+<div class="con-main">
+      
+    <input type="hidden" class="form-control" value="GeneralMaster" id="pgid">
+    <input type="hidden" class="form-control" value="Master" id="pggrpid">
+    <form id="myForm">
+       
+            <div class="row">
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                    <label for="Value_Code">Value Code</label>
+                    <input type="text" class="form-control" id="Value_Code" placeholder="Value Code" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="Value_Description">Value Description</label>
+                    <input type="text" class="form-control" id="Value_Description" placeholder="Value Description" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="Value_Type">Value Type</label>
+                    <select class="form-control" id="Value_Type" required>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="UOM">UOM</option>
+                        <option value="Currency">Currency</option>
+                        <option value="Country">Country</option>
+                        <option value="Metal Exchange">Metal Exchange</option>
+                        <option value="Product Category">Product Category</option>
+                        <option value="Product Type">Product Type</option>
+                        <option value="Vendor Type">Vendor Type</option>
+                        <option value="Customer Type">Customer Type</option>
+                        <option value="Commodity">Commodity</option>
+                    </select>
+                    </div>         
+               
+                </div>
+            </div>
+
+    </form>
+    <!-- Horizontal line -->
+    <hr class="custom-hr">
+    <h3>Recently Added</h3>
+    <div id="masTableContainer">
+    </div>
+</div>
+
+
+
+
+
